@@ -1,5 +1,6 @@
 # AntiShakeDemo
 安卓按钮点击防抖，基于AOP切面方式实现拦截
+类似参考方案：https://www.cnblogs.com/yxx123/archive/2017/04/06/6675567.html?tdsourcetag=s_pctim_aiomsg
 
 # 使用步骤：
 ## 1.添加aop依赖
