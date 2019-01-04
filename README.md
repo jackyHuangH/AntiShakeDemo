@@ -25,6 +25,10 @@
   //AOP,配合aspectj 插件必须依赖
     implementation 'org.aspectj:aspectjrt:1.8.9'
   ```
+  ### 复制demo中aop文件夹里的三个类到项目中
+  AntiShakeClick,
+  AntiShakeClickAspect,
+  AntiShakeClickUtil
   
   ## 2.代码中使用，在点击事件方法中添加注解@AntiShakeClick即可
   
