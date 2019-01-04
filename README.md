@@ -26,7 +26,7 @@
     implementation 'org.aspectj:aspectjrt:1.8.9'
   ```
   
-  ## 2.代码中使用
+  ## 2.代码中使用，在点击事件方法中添加注解@AntiShakeClick即可
   
   ### <1>普通点击事件绑定防抖：
     ```
