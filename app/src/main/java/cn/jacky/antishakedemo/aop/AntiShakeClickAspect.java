@@ -49,7 +49,7 @@ public class AntiShakeClickAspect {
         //取出方法的注解
         MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
         Method method = methodSignature.getMethod();
-        if (!method.isAnnotationPresent(AntiShakeClick.class)) {
+        if (method==null||!method.isAnnotationPresent(AntiShakeClick.class)) {
             return;
         }
         AntiShakeClick singleClick = method.getAnnotation(AntiShakeClick.class);
