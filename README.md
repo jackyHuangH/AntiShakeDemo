@@ -70,3 +70,25 @@
     public void methodAnnotated() {
     }
    ```
+   
+   # Kotlin 按钮防抖,扩展函数实现：
+   ```
+   /**
+ * 按钮点击防抖
+ */
+fun View?.setOnAntiShakeClickListener(intervalMillis: Long = 1000, listener: (View) -> Unit) {
+    /**
+     * 最近一次点击的时间
+     */
+    var lastClickTime: Long = 0
+    this?.setOnClickListener {
+        val currentTime = SystemClock.elapsedRealtime()
+        if (currentTime - lastClickTime >= intervalMillis) {
+            listener.invoke(it)
+            lastClickTime = currentTime
+        }
+    }
+}
+   ```
+   
+   
