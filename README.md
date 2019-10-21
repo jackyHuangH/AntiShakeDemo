@@ -58,8 +58,10 @@
     }
    ```
    
-   # 注意事项：1.重要的事说三遍！！！！请一定要将AntiShakeClickAspect切点方法中的注解路径替换成自己的路径，否则无法生效！！！！
-  # 2.混淆：-keep class 包名.aop.**{*;}
+   # $\color{red}{注意事项：}$
+   ## 1.重要的事说三遍！！！！请一定要将AntiShakeClickAspect切点方法中的注解路径替换成自己的路径，否则无法生效！！！！
+  ## 2.混淆：-keep class 包名.aop.**{*;}
+  ## 3.itemclickListener中尽量不要用，容易出问题。。。
    ```
     /**
      * 定义切点，标记切点为所有被@SingleClick注解的方法
